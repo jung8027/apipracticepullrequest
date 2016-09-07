@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Museum API</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" defer></script>
+    <script src="museum.js" defer></script>
+    <style>
+    html,
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .header {
+        width: auto;
+        height: auto;
+        margin: 0px;
+        background-color: #1a1a1a;
+        margin-top: -21px;
+        padding: 40px;
+    }
+    
+    img {
+        height: 200px;
+        width: 200px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <center>
+            <h1 style="color: white;">Museum API</h1></center>
+    </div>
+    <center>
+        <form>
+            <input type="text" name="search" placeholder="Search">
+                <select id=selected>
+                    <option value="&maker=">Artist</option>
+                    <option value="&type=">Type</option>
+                    <option value="&material=">Materials</option>
+                    <option value="&f.dating.period=">Years</option>
+                </select>
+                <br>
+                <input type="submit" name="search" value="submit">
+        </form>
+    </center>
+    <ul>
+    </ul>
+</body>
+
+</html>
